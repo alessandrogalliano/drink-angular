@@ -1,0 +1,21 @@
+<div *ngIf="dati" class="mt-5">
+    <h1 class="mb-4">"A" drink</h1>
+    <div class="container">
+        <div class="row">
+            <a routerLink="/detail" *ngFor="let drink of dati.drinks" class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card overflow-hidden">
+                    <h2 class="ms-2">{{drink.strDrink}}</h2>
+                    <img src="{{drink.strDrinkThumb}}" alt="drink" class="img-fluid">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
